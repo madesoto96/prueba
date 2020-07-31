@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "CESDE";
+}
+
+
+<div class="jumbotron bg-dark " style="margin-bottom: 0; padding-bottom:3px">
+    <h2 class="text-center"><strong>SISTEMA EDUCATIVO CESDE</strong></h2>
+    <img src="@Url.Content("~/imagenes/logo-cesde-1.png")" class="d-block w-100" alt="..." width="1000px" height="400px">
+    <p class="lead text-center">"Ingreso de alumnos,docentes y administativos"</p>
+    
+</div>
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Alumnos", "index", "alumnoes")</h2>
+        <div>
+            <img src="@Url.Content("~/imagenes/marketplace2.jpg")" class="img-rounded img-thumbnail btn-block" width="300px" height="200px" alt="imgf" />
+            <p class="text-justify">
+                Formulario de ingresos para nuestros alumnos de la universidad CESDE.
+            </p>
+            <p><a href="https://asp.net" class="btn btn-success">Ver Registros &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Profesores", "index", "profesors")</h2>
+        <div>
+            <img src="@Url.Content("~/imagenes/ReunionProfesores-conecta-1920x1080-1_0.jpg")" class="img-rounded img-thumbnail btn-block" width="300px" height="200px" alt="img" />
+            <p class="text-justify">
+                Formulario de nuestros apreciados profesores para su registro.
+            </p>
+            <p><a class="btn btn-success" href="https://go.microsoft.com/fwlink/?LinkId=301866">Ver Registros &raquo;</a></p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <h2>@Html.ActionLink("Administrativos", "index", "administrativos")</h2>
+        <div>
+            <img src="@Url.Content("~/imagenes/108784-como-usar-a-tecnologia-para-alavancar-seus-negocios.jpg")" class="img-rounded img-thumbnail btn-block" width="300px" height="200px" alt="imgj" />
+            <p class="text-justify">
+                Formulario de nuestros apreciados administrativos para su registro.
+            </p>
+            <p><a class="btn btn-success" href="https://go.microsoft.com/fwlink/?LinkId=301867">Ver Registros &raquo;</a></p>
+        </div>
+    </div>
+</div>

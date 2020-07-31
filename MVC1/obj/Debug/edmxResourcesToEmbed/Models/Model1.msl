@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="cesdeModelStoreContainer" CdmEntityContainer="cesdeEntities">
+    <EntitySetMapping Name="administrativos">
+      <EntityTypeMapping TypeName="cesdeModel.administrativos">
+        <MappingFragment StoreEntitySet="administrativos">
+          <ScalarProperty Name="nombrepersona" ColumnName="nombrepersona" />
+          <ScalarProperty Name="codigopersona" ColumnName="codigopersona" />
+          <ScalarProperty Name="areaadministrativa" ColumnName="areaadministrativa" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="alumno">
+      <EntityTypeMapping TypeName="cesdeModel.alumno">
+        <MappingFragment StoreEntitySet="alumno">
+          <ScalarProperty Name="codigoalumno" ColumnName="codigoalumno" />
+          <ScalarProperty Name="nombrealumno" ColumnName="nombrealumno" />
+          <ScalarProperty Name="materiaalumno" ColumnName="materiaalumno" />
+          <ScalarProperty Name="carreraalumno" ColumnName="carreraalumno" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="profesor">
+      <EntityTypeMapping TypeName="cesdeModel.profesor">
+        <MappingFragment StoreEntitySet="profesor">
+          <ScalarProperty Name="codigoprofesor" ColumnName="codigoprofesor" />
+          <ScalarProperty Name="nombreprofesor" ColumnName="nombreprofesor" />
+          <ScalarProperty Name="areaprofesor" ColumnName="areaprofesor" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="cesdeModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

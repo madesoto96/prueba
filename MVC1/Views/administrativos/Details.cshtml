@@ -1,0 +1,42 @@
+﻿@model MVC1.Models.administrativos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>administrativos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.codigopersona)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.codigopersona)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.areaadministrativa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.areaadministrativa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.nombrepersona }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

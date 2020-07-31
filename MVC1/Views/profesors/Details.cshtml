@@ -1,0 +1,42 @@
+﻿@model MVC1.Models.profesor
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>profesor</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreprofesor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreprofesor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.areaprofesor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.areaprofesor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefono)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.codigoprofesor }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
